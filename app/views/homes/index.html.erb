@@ -1,2 +1,125 @@
 <%= render "layouts/navbar" %>
+<%# IDEA: start of advert %>
+<div id="advert">
+  <div class="row" id="first">
+    <div class="col col-md-3" id="carousel-home">
+      <h1 class="white"><strong>CODING MADE EASY</strong></h1>
+      <h5 class="white">Everything your child needs to learn computer programming the fun way! ages 13+</h5>
+      <a href="#" class="btn btn-warning btn-lg">Get started</a>
+    </div>
+    <div class="col col-md-6" id="myCarousel">
+      <%# IDEA: start of carousel %>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+          <div class="item active">
+            <img src="https://www.tynker.com/image/homepage/homepage-parent/hero/maker-mod.png" alt="Los Angeles" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>LA is always so much fun!</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="https://www.tynker.com/image/homepage/homepage-parent/hero/maker-text.png" alt="Chicago" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="https://www.tynker.com/image/homepage/homepage-parent/hero/maker-art.png" alt="New York" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="https://www.tynker.com/image/homepage/homepage-parent/hero/maker-solarsystem.png" alt="New York" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="https://www.tynker.com/image/homepage/homepage-parent/hero/maker-wedo.png" alt="New York" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <%# IDEA: end of carousel %>
+    </div>
+  </div>
+</div>
+<%# IDEA: end of advert %>
+<%# IDEA: start of empower %>
+<div class="container" id="empowerment">
+  <div class="row">
+    <div class="col col-md-6">
+
+      <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.livememe.com%2Fdank%2Fsuccesskid.png&f=1" alt="child">
+    </div>
+    <div class="col col-md-6">
+      <h2>
+        <strong>KIDZDEV</strong>
+        EMPOWERS KIDS TO BECOME MAKERS</h2>
+      <h4>Kids acquire crucial 21st century skills and learn to innovate across multiple themes based on their interests.</h4>
+      <div class="row" id="empower">
+        <div class="col col-sm-3 pull-left" id="empower1">
+          <p>this is a card that will hold data soon</p>
+        </div>
+        <div class="col col-sm-3" id="empower2">
+          <p>this is a card that will hold data soon</p>
+        </div>
+        <div class="col col-sm-3 pull-right" id="empower3">
+          <p>this is a card that will hold data soon</p>
+        </div>
+      </div>
+
+      <div class="row" id="empower">
+        <div class="col col-sm-3" id="empower4">
+          <p>this is a card that will hold data soon</p>
+        </div>
+        <div class="col col-sm-3" id="empower5">
+          <p>this is a card that will hold data soon</p>
+        </div>
+        <div class="col col-sm-3" id="empower6">
+          <p>this is a card that will hold data soon</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<%# IDEA: end of empower %>
+
+<%# IDEA: start of about %>
+
+<div class="container" id="aboutColor">
+  <div class="container" id="about">
+    <h1 class="white">WHAT IS KIDZDEV</h1>
+    <h4 class="about white">Tynker is a complete learning system that teaches kids to code. Kids begin experimenting with visual blocks, then progress to JavaScript and Python as they design games, build apps, and make incredible projects.</h4>
+    <img id="aboutImage" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fmlmf8.files.wordpress.com%2F2012%2F06%2Fhappy-computer.png&f=1" alt="img">
+  </div>
+</div>
 <%= render "layouts/footer" %>
