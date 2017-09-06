@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Kidzdev</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://bootswatch.com/spacelab/bootstrap.min.css">
-  </head>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+                <link rel="stylesheet" href="https://bootswatch.com/spacelab/bootstrap.min.css">
 
-  <body>
+</head>
+
+<body>
     <%= yield %>
-  </body>
+</body>
+
+
+
+
 </html>
