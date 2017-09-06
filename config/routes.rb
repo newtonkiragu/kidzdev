@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   get 'languages/index'
   root 'homes#index'
   get 'homes/index'
- 
+
+  match '/help',to: 'pages#help', via: :get 
+
 end
