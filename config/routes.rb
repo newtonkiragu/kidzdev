@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get 'homes/index'
 
   match '/help',to: 'pages#help', via: :get 
+  match '/contacts',to: 'pages#contacts',via: :get
 
 end
