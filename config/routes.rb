@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
   match '/help',to: 'pages#help', via: :get 
   match '/contacts',to: 'pages#contacts',via: :get
+  match '/about',to: 'pages#about',via: :get
 
 end
