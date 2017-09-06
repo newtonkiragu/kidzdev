@@ -17,6 +17,6 @@
 /yarn-error.log
 
 .byebug_history
-
+env/
 # Ignore Gemfile.lock
 Gemfile.lock

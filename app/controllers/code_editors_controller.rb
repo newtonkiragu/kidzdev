@@ -1,0 +1,2 @@
+class CodeEditorsController < ApplicationController
+end
