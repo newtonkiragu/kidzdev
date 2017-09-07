@@ -4,12 +4,12 @@ Rails.application.routes.draw do
   resources :homes
   resources :books
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :languages do
+  resources :categories do
     resources :lessons
     
   end
 
-  get 'languages/index'
+  get 'categories/index'
   root 'homes#index'
   get 'homes/index'
   get 'code_editors/index'

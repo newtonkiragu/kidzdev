@@ -1,14 +1,14 @@
 class InitialSchema < ActiveRecord::Migration[5.1]
   
   def change 
-    create_table :languages do |t|
+    create_table :categories do |t|
       t.string :name
       
       end
 
-    create_table :topics do |t| 
+    create_table :subcategories do |t| 
       t.string :name
-      t.integer :language_id
+      t.integer :category_id
     end
 
 
