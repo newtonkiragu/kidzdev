@@ -174,7 +174,7 @@
                 <% @html.subcategories.each do |subcategory| %>
                     <ul>
                         <li>
-                            <%= link_to subcategory.name %>
+                            <%= link_to subcategory.name, category_subcategory_path(@html,subcategory) %>
                         </li>
                     </ul>
                     <%end%>
