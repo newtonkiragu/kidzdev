@@ -1,6 +1,7 @@
 <h2>Welcome to
   <%= @book.title %>
   .</h2>
+<p><%= @book.context %></p>
 <p><%= link_to "Edit", edit_book_path(@book) %>|
   <%= link_to "Delete", book_path(@book),
                            :data => {:confirm => "You sure?",
