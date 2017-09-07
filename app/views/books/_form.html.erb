@@ -3,5 +3,7 @@
 <%= form_for @book do |f| %>
 <%= f.label :title %>
 <%= f.text_field :title %>
+<%= f.label :context %>
+<%= f.text_field :context, value: '##sub-title' %>
 <%= f.submit %>
 <% end %>
