@@ -184,7 +184,7 @@
                 <% @css.subcategories.each do |subcategory| %>
                     <ul>
                         <li>
-                            <%= link_to subcategory.name category_subcategory_path(@css,subcategory) %>
+                            <%= link_to subcategory.name, category_subcategory_path(@css,subcategory) %>
                         </li>
                     </ul>
                     <%end%>
@@ -193,7 +193,7 @@
                 <% @python.subcategories.each do |subcategory| %>
                     <ul>
                         <li>
-                            <%= link_to subcategory.name  category_subcategory_path(@python,subcategory)%>
+                            <%= link_to subcategory.name ,category_subcategory_path(@python,subcategory)%>
                         </li>
                     </ul>
                     <%end%>
@@ -202,7 +202,7 @@
                 <% @ruby.subcategories.each do |subcategory| %>
                     <ul>
                         <li>
-                            <%= link_to subcategory.name category_subcategory_path(@ruby,subcategory)%>
+                            <%= link_to subcategory.name ,category_subcategory_path(@ruby,subcategory)%>
                         </li>
                     </ul>
                     <%end%>
@@ -211,7 +211,7 @@
                 <% @javascript.subcategories.each do |subcategory| %>
                     <ul>
                         <li>
-                            <%= link_to subcategory.name category_subcategory_path(@javascript,subcategory)%>
+                            <%= link_to subcategory.name, category_subcategory_path(@javascript,subcategory)%>
                         </li>
                     </ul>
                     <%end%>
@@ -220,7 +220,7 @@
                 <% @cplus.subcategories.each do |subcategory| %>
                     <ul>
                         <li>
-                            <%= link_to subcategory.name category_subcategory_path(@cplus,subcategory)%>
+                            <%= link_to subcategory.name ,category_subcategory_path(@cplus,subcategory)%>
                         </li>
                     </ul>
                     <%end%>
