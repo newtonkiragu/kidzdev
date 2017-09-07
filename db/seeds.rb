@@ -6,12 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-html_category = Category.where(name: 'HTML').first_or_create(name: 'HTML')
-css_category = Category.where(name: 'CSS').first_or_create(name: 'CSS')
-python_category = Category.where(name: 'PYTHON').first_or_create(name: 'PYTHON')
-ruby_category = Category.where(name: 'RUBY').first_or_create(name: 'RUBY')
-javascript_category = Category.where(name: 'JavaScript').first_or_create(name: 'JavaScript')
-cplus_category = Category.where(name: 'C++').first_or_create(name: 'C++')
+html_category = Category.where(name: 'html').first_or_create(name: 'html')
+css_category = Category.where(name: 'css').first_or_create(name: 'css')
+python_category = Category.where(name: 'python').first_or_create(name: 'python')
+ruby_category = Category.where(name: 'ruby').first_or_create(name: 'ruby')
+javascript_category = Category.where(name: 'javascript').first_or_create(name: 'javascript')
+cplus_category = Category.where(name: 'c++').first_or_create(name: 'c++')
 
 
 
