@@ -77,8 +77,103 @@
       <h4>Kids acquire crucial 21st century skills and learn to innovate across multiple themes based on their interests.</h4>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
       <div class="container-fluid">
+      <% if current_user.nil? %>
+          <P>please <%= link_to "Sign In", new_user_session_path %> to view our content</P>
         <div class="row">
-          <div class="col-md-3 col-sm-4">
+          <div class="col-md-4 col-sm-3">
+            <div class="wrimagecard wrimagecard-topimage">
+                <div class="wrimagecard-topimage_header" style="background-color: rgba(119, 178, 88, 0.1)">
+                  <center>
+                    <i class="fa fa-cubes" style="color:#16A085"></i>
+                  </center>
+                </div>
+                <div class="wrimagecard-topimage_title">
+                  <h4>HTML
+                    <div class="pull-right badge" id="WrControls"></div>
+                  </h4>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-3">
+            <div class="wrimagecard wrimagecard-topimage">
+                <div class="wrimagecard-topimage_header" style="background-color:  rgba(213, 15, 37, 0.1)">
+                  <center>
+                    <i class="fa fa-pencil-square-o" style="color:#d50f25"></i>
+                  </center>
+                </div>
+                <div class="wrimagecard-topimage_title">
+                  <h4>CSS
+                    <div class="pull-right badge" id="WrForms"></div>
+                  </h4>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-3">
+            <div class="wrimagecard wrimagecard-topimage">
+                <div class="wrimagecard-topimage_header" style="background-color:  rgba(51, 105, 232, 0.1)">
+                  <center>
+                    <i class="fa fa-table" style="color:#3369e8"></i>
+                  </center>
+                </div>
+                <div class="wrimagecard-topimage_title">
+                  <h4>JAVASCRIPT
+                    <div class="pull-right badge" id="WrGridSystem"></div>
+                  </h4>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="wrimagecard wrimagecard-topimage">
+                <div class="wrimagecard-topimage_header" style="background-color:  rgba(250, 188, 9, 0.1)">
+                  <center>
+                    <i class="fa fa-info-circle" style="color:#fabc09"></i>
+                  </center>
+                </div>
+                <div class="wrimagecard-topimage_title">
+                  <h4>RUBY
+                    <div class="pull-right badge" id="WrInformation"></div>
+                  </h4>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="wrimagecard wrimagecard-topimage">
+                <div class="wrimagecard-topimage_header" style="background-color: rgba(121, 90, 71, 0.1)">
+                  <center>
+                    <i class="fa fa-bars" style="color:#795a47"></i>
+                  </center>
+                </div>
+                <div class="wrimagecard-topimage_title">
+                  <h4>RAILS
+                    <div class="pull-right badge" id="WrNavigation"></div>
+                  </h4>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="wrimagecard wrimagecard-topimage">
+                <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
+                  <center>
+                    <i class="fa fa-magic" style="color:#825d09"></i>
+                  </center>
+                </div>
+                <div class="wrimagecard-topimage_title">
+                  <h4>FRAMEWORKS
+                    <div class="pull-right badge" id="WrThemesIcons"></div>
+                  </h4>
+                </div>
+            </div>
+          </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+         <% else %>
+        <div class="row">
+          <div class="col-md-4 col-sm-3">
             <div class="wrimagecard wrimagecard-topimage">
               <a href="#">
                 <div class="wrimagecard-topimage_header" style="background-color: rgba(119, 178, 88, 0.1)">
@@ -87,14 +182,14 @@
                   </center>
                 </div>
                 <div class="wrimagecard-topimage_title">
-                  <h4>Controls
+                  <h4>HTML
                     <div class="pull-right badge" id="WrControls"></div>
                   </h4>
                 </div>
               </a>
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-md-4 col-sm-3">
             <div class="wrimagecard wrimagecard-topimage">
               <a href="#">
                 <div class="wrimagecard-topimage_header" style="background-color:  rgba(213, 15, 37, 0.1)">
@@ -103,14 +198,14 @@
                   </center>
                 </div>
                 <div class="wrimagecard-topimage_title">
-                  <h4>Forms
+                  <h4>CSS
                     <div class="pull-right badge" id="WrForms"></div>
                   </h4>
                 </div>
               </a>
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-md-4 col-sm-3">
             <div class="wrimagecard wrimagecard-topimage">
               <a href="#">
                 <div class="wrimagecard-topimage_header" style="background-color:  rgba(51, 105, 232, 0.1)">
@@ -119,7 +214,7 @@
                   </center>
                 </div>
                 <div class="wrimagecard-topimage_title">
-                  <h4>Grid System
+                  <h4>JAVASCRIPT
                     <div class="pull-right badge" id="WrGridSystem"></div>
                   </h4>
                 </div>
@@ -128,7 +223,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 col-sm-4">
+          <div class="col-md-4 col-sm-4">
             <div class="wrimagecard wrimagecard-topimage">
               <a href="#">
                 <div class="wrimagecard-topimage_header" style="background-color:  rgba(250, 188, 9, 0.1)">
@@ -137,14 +232,14 @@
                   </center>
                 </div>
                 <div class="wrimagecard-topimage_title">
-                  <h4>Information
+                  <h4>RUBY
                     <div class="pull-right badge" id="WrInformation"></div>
                   </h4>
                 </div>
               </a>
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-md-4 col-sm-4">
             <div class="wrimagecard wrimagecard-topimage">
               <a href="#">
                 <div class="wrimagecard-topimage_header" style="background-color: rgba(121, 90, 71, 0.1)">
@@ -153,14 +248,14 @@
                   </center>
                 </div>
                 <div class="wrimagecard-topimage_title">
-                  <h4>Navigation
+                  <h4>RAILS
                     <div class="pull-right badge" id="WrNavigation"></div>
                   </h4>
                 </div>
               </a>
             </div>
           </div>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-md-4 col-sm-4">
             <div class="wrimagecard wrimagecard-topimage">
               <a href="#">
                 <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
@@ -169,7 +264,7 @@
                   </center>
                 </div>
                 <div class="wrimagecard-topimage_title">
-                  <h4>Themes & Icons
+                  <h4>FRAMEWORKS
                     <div class="pull-right badge" id="WrThemesIcons"></div>
                   </h4>
                 </div>
@@ -177,17 +272,23 @@
             </div>
           </div>
         </div>
+                       
+      <% end %>
       </div>
     </div>
   </div>
 </div>
 <%# IDEA: end of empower %>
+<br>
+<br>
+<br>
+
 <%# IDEA: start of about %>
 <div class="container" id="aboutColor">
   <div class="container" id="about">
     <h1 class="white">WHAT IS KIDZDEV</h1>
     <h4 class="about white">Tynker is a complete learning system that teaches kids to code. Kids begin experimenting with visual blocks, then progress to JavaScript and Python as they design games, build apps, and make incredible projects.</h4>
-    <img id="aboutImage" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fmlmf8.files.wordpress.com%2F2012%2F06%2Fhappy-computer.png&f=1" alt="img">
+    <img id="aboutImage" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fmlmf8.files.wordpress.com%2F2012%2F06%2Fhappy-computer.png&f=1" alt="img" style="padding-top: 20px;">
   </div>
 </div>
 <%= render "layouts/footer" %>
