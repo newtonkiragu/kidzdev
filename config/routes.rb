@@ -8,7 +8,8 @@ Rails.application.routes.draw do
     resources :lessons
     
   end
-
+  
+ 
   get 'categories/index'
   root 'homes#index'
   get 'homes/index'
@@ -17,4 +18,7 @@ Rails.application.routes.draw do
   match '/help',to: 'pages#help', via: :get 
   match '/contacts',to: 'pages#contacts',via: :get
   match '/about',to: 'pages#about',via: :get
+  match '/lessons',to: 'lessons#index', via: :get
+ 
+
 end

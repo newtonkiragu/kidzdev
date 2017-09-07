@@ -143,6 +143,126 @@
             </div>
         </div>
     </div>
+
+
+    <!-- ############################################### Table ############################################### -->
+    <p>Get resources for your Learning</p>
+    <table>
+        <colgroup span="4"></colgroup>
+        <tr>
+            <th>
+                <%= link_to 'HTML' %>
+            </th>
+            <th>
+                <%= link_to 'CSS' %>
+            </th>
+            <th>
+                <%= link_to 'PYTHON' %>
+            </th>
+            <th>
+                <%= link_to 'RUBY' %>
+            </th>
+            <th>
+                <%= link_to 'JAVASCRIPT' %>
+            </th>
+            <th>
+                <%= link_to 'C++' %>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <% @html.subcategories.each do |subcategory| %>
+                    <ul>
+                        <li>
+                            <%= link_to subcategory.name %>
+                        </li>
+                    </ul>
+                    <%end%>
+
+            </td>
+            <td>
+                <% @css.subcategories.each do |subcategory| %>
+                    <ul>
+                        <li>
+                            <%= link_to subcategory.name %>
+                        </li>
+                    </ul>
+                    <%end%>
+            </td>
+            <td>
+                <% @python.subcategories.each do |subcategory| %>
+                    <ul>
+                        <li>
+                            <%= link_to subcategory.name %>
+                        </li>
+                    </ul>
+                    <%end%>
+            </td>
+            <td>
+                <% @ruby.subcategories.each do |subcategory| %>
+                    <ul>
+                        <li>
+                            <%= link_to subcategory.name %>
+                        </li>
+                    </ul>
+                    <%end%>
+            </td>
+            <td>
+                <% @javascript.subcategories.each do |subcategory| %>
+                    <ul>
+                        <li>
+                            <%= link_to subcategory.name %>
+                        </li>
+                    </ul>
+                    <%end%>
+            </td>
+            <td>
+                <% @cplus.subcategories.each do |subcategory| %>
+                    <ul>
+                        <li>
+                            <%= link_to subcategory.name %>
+                        </li>
+                    </ul>
+                    <%end%>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ############################################### js css and what not ######################## -->
     <style>
         .glyphicon {
             margin-right: 5px;
