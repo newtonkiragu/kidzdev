@@ -18,3 +18,5 @@
 
 .byebug_history
 env/
+# Ignore Gemfile.lock
+Gemfile.lock
