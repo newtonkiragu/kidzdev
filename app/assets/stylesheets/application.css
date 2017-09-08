@@ -14,6 +14,16 @@
  *= require_self
  */
 
+
+/* ################# NAVBAR ############################### */
+
+.navbar-brand {
+    width: 200px;
+}
+
+
+/* ################## NAV BAR BRAND END ########################### */
+
 #first {
     display: inline-flex;
     align-items: stretch;
