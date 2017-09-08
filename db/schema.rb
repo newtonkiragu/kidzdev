@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20170907130012) do
     t.string "context"
   end
 
-  create_table "languages", force: :cascade do |t|
+  create_table "categories", force: :cascade do |t|
     t.string "name"
   end
 
@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(version: 20170907130012) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "topics", force: :cascade do |t|
+  create_table "subcategories", force: :cascade do |t|
     t.string "name"
-    t.integer "language_id"
+    t.integer "category_id"
   end
 
   create_table "users", force: :cascade do |t|

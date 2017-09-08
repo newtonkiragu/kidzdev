@@ -1,6 +1,6 @@
-class HomesController < ApplicationController
+class CategoriesController < ApplicationController
 
-    def index 
+    def index
         @categories = Category.all
         @html = @categories[0]
         @css = @categories[0]
@@ -8,8 +8,11 @@ class HomesController < ApplicationController
         @ruby = @categories[0]
         @javascript = @categories[0]
         @cplus = @categories[0]
-    end 
     
+    end
+
     def show 
     end
+
+
 end

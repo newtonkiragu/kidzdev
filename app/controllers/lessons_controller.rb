@@ -1,4 +1,3 @@
 class LessonsController < ApplicationController
 
-
 end
