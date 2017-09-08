@@ -1,68 +1,45 @@
-<%= render "layouts/navbar" %>
+<%= render "layouts/navbar"%>
     <%# IDEA: start of advert %>
         <div id="advert">
-            <div class="row" id="first">
-                <div class="col col-md-3" id="carousel-home">
+            <div class="row container" id="first">
+                <div class="col-md-6 " id="carousel-home">
                     <h1 class="white">
                         <strong>CODING MADE EASY</strong>
                     </h1>
-                    <h5 class="white">Everything your child needs to learn computer programming the fun way! ages 13+</h5>
-                    <a href="#" class="btn btn-warning btn-lg">Get started</a>
+                    <div style="padding-left:18%;">
+                        <h5 class="white">Everything your child needs to learn computer programming the fun way! ages 13+</h5>
+                        <a href="#" class="btn btn-warning btn-lg">Get started</a>
+                    </div>
                 </div>
-                <div class="col col-md-6" id="myCarousel">
-                    <%# IDEA: start of carousel %>
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                                <li data-target="#myCarousel" data-slide-to="3"></li>
-                                <li data-target="#myCarousel" data-slide-to="4"></li>
-                            </ol>
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img src="https://www.tynker.com/image/homepage/homepage-parent/hero/maker-mod.png" alt="Los Angeles" style="width:100%;">
-                                    <div class="carousel-caption">
-                                        <h3>Los Angeles</h3>
-                                        <p>LA is always so much fun!</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="https://www.tynker.com/image/homepage/homepage-parent/hero/maker-text.png" alt="Chicago" style="width:100%;">
-                                    <div class="carousel-caption">
-                                        <h3>Chicago</h3>
-                                        <p>Thank you, Chicago!</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="https://www.tynker.com/image/homepage/homepage-parent/hero/maker-art.png" alt="New York" style="width:100%;">
-                                    <div class="carousel-caption">
-                                        <h3>New York</h3>
-                                        <p>We love the Big Apple!</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="https://www.tynker.com/image/homepage/homepage-parent/hero/maker-solarsystem.png" alt="New York" style="width:100%;">
-                                    <div class="carousel-caption">
-                                        <h3>New York</h3>
-                                        <p>We love the Big Apple!</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="https://www.tynker.com/image/homepage/homepage-parent/hero/maker-wedo.png" alt="New York" style="width:100%;">
-                                    <div class="carousel-caption">
-                                        <h3>New York</h3>
-                                        <p>We love the Big Apple!</p>
-                                    </div>
+
+                <%# IDEA: start of carousel %>
+                    <div class="col-md-6 ">
+                        <div class="ferris_wheel" style="width:10%;height:10%;">
+                            <div class="wheel_wrap">
+                                <div class="wheel">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
                             </div>
+                            <div class="buckets">
+                                <div><span></span></div>
+                                <div><span></span></div>
+                                <div><span></span></div>
+                                <div><span></span></div>
+                                <div><span></span></div>
+                                <div><span></span></div>
+                                <div><span></span></div>
+                                <div><span></span></div>
+                            </div>
+                            <div class="stand"><span></span></div>
                         </div>
                         <%# IDEA: end of carousel %>
-                </div>
+
+                    </div>
             </div>
         </div>
+
         <%# IDEA: end of advert %>
             <%# IDEA: start of empower %>
                 <div class="container" id="empowerment">
@@ -80,159 +57,160 @@
 
                         </div>
                     </div>
-                </div>
-                <%# IDEA: end of empower %>
 
-                    <!-- ########################################### GRID LAYOUT LANGUAGE ############################ -->
 
-                    <div class="container">
-                        <div class="well well-sm">
-                            <strong>Languages</strong>
-                            <div class="btn-group">
-                                <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+                    <%# IDEA: end of empower %>
+
+                        <!-- ########################################### GRID LAYOUT LANGUAGE ############################ -->
+
+                        <div class="container">
+                            <div class="well well-sm">
+                                <strong>Languages</strong>
+                                <div class="btn-group">
+                                    <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
             </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
                 class="glyphicon glyphicon-th"></span>Grid</a>
+                                </div>
+                            </div>
+                            <div id="categories-list" class="row list-group">
+                                <div class="item  col-xs-4 col-lg-4">
+                                    <div class="thumbnail">
+                                        <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
+                                        <%= image_tag  'html5.svg', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
+                                            <div class="caption">
+                                                <h4 class="group inner list-group-item-heading">
+                                                    <%= link_to  "A Fun way to learn HTML" %>
+                                                </h4>
+                                                <p class="group inner list-group-item-text">
+                                                    Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <p class="lead">
+                                                            GET STARTED</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="item  col-xs-4 col-lg-4">
+                                    <div class="thumbnail">
+                                        <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
+                                        <%= image_tag  'cssisgood.png', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
+                                            <div class="caption">
+                                                <h4 class="group inner list-group-item-heading">
+                                                    <%= link_to  "A Fun way to learn CSS" %>
+                                                </h4>
+                                                <p class="group inner list-group-item-text">
+                                                    Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <p class="lead">
+                                                            GET STARTED</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="item  col-xs-4 col-lg-4">
+                                    <div class="thumbnail">
+                                        <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
+                                        <%= image_tag  'python1.jpeg', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
+                                            <div class="caption">
+                                                <h4 class="group inner list-group-item-heading">
+                                                    <%= link_to  "A Fun way to learn PYTHON" %>
+                                                </h4>
+                                                <p class="group inner list-group-item-text">
+                                                    Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <p class="lead">
+                                                            GET STARTED</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="item  col-xs-4 col-lg-4">
+                                    <div class="thumbnail">
+                                        <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
+                                        <%= image_tag  'ruby4kids.jpeg', alt:'rubylogo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
+                                            <div class="caption">
+                                                <h4 class="group inner list-group-item-heading">
+                                                    <%= link_to  "A Fun way to learn RUBY" %>
+                                                </h4>
+                                                <p class="group inner list-group-item-text">
+                                                    Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <p class="lead">
+                                                            GET STARTED</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="item  col-xs-4 col-lg-4">
+                                    <div class="thumbnail">
+                                        <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
+                                        <%= image_tag  'javascript.jpg', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
+                                            <div class="caption">
+                                                <h4 class="group inner list-group-item-heading">
+                                                    <%= link_to  "A Fun way to learn JAVASCRIPT" %>
+                                                </h4>
+                                                <p class="group inner list-group-item-text">
+                                                    Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <p class="lead">
+                                                            GET STARTED</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="item  col-xs-4 col-lg-4">
+                                    <div class="thumbnail">
+                                        <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
+                                        <%= image_tag  'cplusplus.jpg', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
+                                            <div class="caption">
+                                                <h4 class="group inner list-group-item-heading">
+                                                    <%= link_to  "A Fun way to learn C++" %>
+                                                </h4>
+                                                <p class="group inner list-group-item-text">
+                                                    Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <p class="lead">
+                                                            GET STARTED</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div id="categories-list" class="row list-group">
-                            <div class="item  col-xs-4 col-lg-4">
-                                <div class="thumbnail">
-                                    <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
-                                    <%= image_tag  'html5.svg', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
-                                        <div class="caption">
-                                            <h4 class="group inner list-group-item-heading">
-                                                <%= link_to  "A Fun way to learn HTML" %>
-                                            </h4>
-                                            <p class="group inner list-group-item-text">
-                                                Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-md-6">
-                                                    <p class="lead">
-                                                        GET STARTED</p>
-                                                </div>
-                                                <div class="col-xs-12 col-md-6">
-                                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="item  col-xs-4 col-lg-4">
-                                <div class="thumbnail">
-                                    <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
-                                    <%= image_tag  'cssisgood.png', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
-                                        <div class="caption">
-                                            <h4 class="group inner list-group-item-heading">
-                                                <%= link_to  "A Fun way to learn CSS" %>
-                                            </h4>
-                                            <p class="group inner list-group-item-text">
-                                                Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-md-6">
-                                                    <p class="lead">
-                                                        GET STARTED</p>
-                                                </div>
-                                                <div class="col-xs-12 col-md-6">
-                                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="item  col-xs-4 col-lg-4">
-                                <div class="thumbnail">
-                                    <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
-                                    <%= image_tag  'python1.jpeg', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
-                                        <div class="caption">
-                                            <h4 class="group inner list-group-item-heading">
-                                                <%= link_to  "A Fun way to learn PYTHON" %>
-                                            </h4>
-                                            <p class="group inner list-group-item-text">
-                                                Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-md-6">
-                                                    <p class="lead">
-                                                        GET STARTED</p>
-                                                </div>
-                                                <div class="col-xs-12 col-md-6">
-                                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="item  col-xs-4 col-lg-4">
-                                <div class="thumbnail">
-                                    <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
-                                    <%= image_tag  'ruby4kids.jpeg', alt:'rubylogo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
-                                        <div class="caption">
-                                            <h4 class="group inner list-group-item-heading">
-                                                <%= link_to  "A Fun way to learn RUBY" %>
-                                            </h4>
-                                            <p class="group inner list-group-item-text">
-                                                Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-md-6">
-                                                    <p class="lead">
-                                                        GET STARTED</p>
-                                                </div>
-                                                <div class="col-xs-12 col-md-6">
-                                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="item  col-xs-4 col-lg-4">
-                                <div class="thumbnail">
-                                    <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
-                                    <%= image_tag  'javascript.jpg', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
-                                        <div class="caption">
-                                            <h4 class="group inner list-group-item-heading">
-                                                <%= link_to  "A Fun way to learn JAVASCRIPT" %>
-                                            </h4>
-                                            <p class="group inner list-group-item-text">
-                                                Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-md-6">
-                                                    <p class="lead">
-                                                        GET STARTED</p>
-                                                </div>
-                                                <div class="col-xs-12 col-md-6">
-                                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="item  col-xs-4 col-lg-4">
-                                <div class="thumbnail">
-                                    <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
-                                    <%= image_tag  'cplusplus.jpg', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
-                                        <div class="caption">
-                                            <h4 class="group inner list-group-item-heading">
-                                                <%= link_to  "A Fun way to learn C++" %>
-                                            </h4>
-                                            <p class="group inner list-group-item-text">
-                                                Coding Made Easy Everything your child needs to learn computer programming the fun way! Ages 7+ </p>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-md-6">
-                                                    <p class="lead">
-                                                        GET STARTED</p>
-                                                </div>
-                                                <div class="col-xs-12 col-md-6">
-                                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
 
-                    <!-- ############################################### Table ############################################### -->
-                    <h1><span class="blue">&lt;</span>explore<span class="blue">&gt;</span> <span class="yellow">More</pan></h1>
+                        <!-- ############################################### Table ############################################### -->
+                        <h1><span class="blue">&lt;</span>explore<span class="blue">&gt;</span> <span class="yellow">More</pan></h1>
 <h2>Start exploring your favourite programming langugage<a href="http://pablogarciafernandez.com" target="_blank">It's fun</a></h2>
 
                     
@@ -322,9 +300,7 @@
 
 
                     <!-- ################################### END GRID LAYOUT LANGUAGE ################################ -->
-                    <br>
-                    <br>
-                    <br>
+                
                     <%# IDEA: start of about %>
                         <div class="container" id="aboutColor">
                             <div class="container" id="about">
@@ -411,3 +387,5 @@
                                     });
                                 });
                             </script>
+
+                            <!-- ################ for animate js ################ -->
