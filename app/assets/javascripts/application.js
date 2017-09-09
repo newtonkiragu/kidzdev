@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
+//= require socket.io
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
