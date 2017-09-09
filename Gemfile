@@ -8,6 +8,8 @@ end
 # Use node-rails  to serve node code 
 gem "node-rails", git: "https://github.com/cloudspace/node-rails.git"
 
+gem 'redis-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use postgresql as the database for Active Record
