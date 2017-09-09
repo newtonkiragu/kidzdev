@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
+# Use ace for code editor 
+gem 'ace-rails-ap'
 # Use node-rails  to serve node code 
 gem "node-rails", git: "https://github.com/cloudspace/node-rails.git"
 
