@@ -1,7 +1,10 @@
 <%= render 'layouts/errors', :object => @book %>
 
 <%= form_for @book do |f| %>
-<%= f.label :title %>
+<%= f.label :title %> <br>
 <%= f.text_field :title %>
+<br>
+<%= f.label :context %> <br>
+<%= f.text_area :context, value: '##sub-title', rows: '25', cols: '70'%> <br>
 <%= f.submit %>
 <% end %>
