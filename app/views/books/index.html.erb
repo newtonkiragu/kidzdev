@@ -1,10 +1,19 @@
 <%= render "layouts/navbar" %>
-    <h1>These are the available Books.</h1>
-    <ul>
-        <% @books.each do |book| %>
-            <li style="font-size: 20px"><strong><%= link_to book.title, book_path(book) %></strong></li>
-            <% end %>
-    </ul>
-    <br>
-    <h2>Add a book.</h2>
-    <%= link_to "New Book", new_book_path %>
+<h1>These are the available Books.</h1>
+<div class="row">
+  <% @books.each do |book| %>
+  <div class="col-md-4 portfolio-item">
+    <h2>
+      <img src="<%= book.image %>" alt="">
+    </h2>
+  <li style="font-size: 20px">
+    <strong><%= link_to book.title, book_path(book) %></strong>
+  </li>
+</div>
+<% end %>
+</div>
+
+<ul></ul>
+<br>
+<h2>Add a book.</h2>
+<%= link_to "New Book", new_book_path %>
