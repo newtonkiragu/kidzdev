@@ -1,6 +1,7 @@
-<h2>Welcome to
+<h2>
+  <%= image_tag @book.image_url.to_s %>
   <%= @book.title %>
-  .</h2>
+</h2>
 <p><%= markdown(@book.context) %></p>
 <p><%= link_to "Edit", edit_book_path(@book) %>|
   <%= link_to "Delete", book_path(@book),
