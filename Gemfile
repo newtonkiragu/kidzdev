@@ -5,11 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+# Use Hackerack api for compiling 
+gem 'hackerrank', '~> 0.0.5'
 # Use ace for code editor 
 gem 'ace-rails-ap', '~> 4.1', '>= 4.1.1'
 # Use node-rails  to serve node code 
-gem "node-rails", git: "https://github.com/cloudspace/node-rails.git"
+gem 'node-rails', git: 'https://github.com/cloudspace/node-rails.git'
 
 gem 'redis-rails'
 
