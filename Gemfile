@@ -6,9 +6,9 @@ git_source(:github) do |repo_name|
 end
 
 
-# Use ace for code editor 
+# Use ace for code editor
 gem 'ace-rails-ap', '~> 4.1', '>= 4.1.1'
-# Use node-rails  to serve node code 
+# Use node-rails  to serve node code
 gem "node-rails", git: "https://github.com/cloudspace/node-rails.git"
 
 gem 'redis-rails'
@@ -44,6 +44,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise', '~> 4.3.0'
 gem 'redcarpet', '~> 3.0.0'
+gem 'carrierwave'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

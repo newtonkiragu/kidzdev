@@ -1,53 +1,62 @@
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- <a class="navbar-brand" href="/">KIDZDEV</a> -->
-            <a class="navbar-brand" href="/">
-                <%= image_tag  "Logomakr_5qtvb8.png", class: "d-inline-block align-top " ,style: "width:100%" %>
-                    <!-- <img src="/assets/brand/bootstrap-solid.svg" class="d-inline-block align-top" alt=""> Bootstrap -->
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="/about">ABOUT <span class="sr-only">(current)</span></a></li>
-                <li><a href="/contacts">CONTACT US</a></li>
-            </ul>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <% if current_user.nil? %>
-                    <li>
-                        <%= link_to "Sign In", new_user_session_path %>
-                    </li>
-                    <li>
-                        <%= link_to "Sign Up", new_user_registration_path%>
-                    </li>
-                    <% else %>
-                        <li>
-                            <%= link_to "LESSONS", lessons_path %>
-                                </a>
-                        </li>
-                        <li>
-                            <%= link_to "BOOKS", books_path %>
-                                </a>
-                        </li>
-                        <li><a href="/help">HELP</a></li>
-                        <li>
-                            <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-                                </a>
-                        </li>
-                        <% end %>
-            </ul>
-        </div>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="/">KIDZDEV</a> -->
+      <a class="navbar-brand" href="/">
+        <%= image_tag  "Logomakr_5qtvb8.png", class: "d-inline-block align-top " ,style: "width:100%" %>
+        <!-- <img src="/assets/brand/bootstrap-solid.svg" class="d-inline-block align-top" alt=""> Bootstrap -->
+      </a>
     </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/about">ABOUT
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/contacts">CONTACT US</a>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <% if current_user.nil? %>
+        <li>
+          <%= link_to "Sign In", new_user_session_path %>
+        </li>
+        <li>
+          <%= link_to "Sign Up", new_user_registration_path%>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to "LESSONS", lessons_path %>
+        </a>
+      </li>
+      <li>
+        <%= link_to "BOOKS", books_path %>
+      </a>
+    </li>
+    <li>
+      <a href="/help">HELP</a>
+    </li>
+    <li>
+      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+    </a>
+  </li>
+  <% end %>
+</ul>
+</div>
+
+</div>
 </nav>
