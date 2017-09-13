@@ -43,6 +43,16 @@
           <%= link_to "LESSONS", lessons_path %>
         </a>
       </li>
+      <li class="dropdown">
+              <a href="/categories"class="dropdown-toggle" data-toggle="dropdown">LESSONS<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
       <li>
         <%= link_to "BOOKS", books_path %>
       </a>
@@ -60,3 +70,17 @@
 
 </div>
 </nav>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".dropdown").hover(
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');
+        }
+    );
+});
+</script>
