@@ -25,12 +25,13 @@
     position: absolute;
 }
 
-#kids-image {
+#terminal {
     margin: 0;
     position: absolute;
-    top: 37%;
-    left: 13%;
-    width: 5%;
+    top: 60%;
+    left: 47%;
+    width: 35%;
+    height: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -132,3 +133,134 @@
     z-index: -4;
     transform: translate(-50%, -50%);
 }
+
+// #### Terminal styling  ##########
+.window {
+    width: 450px;
+    height: 250px;
+    background-color: rgba(37, 37, 37, .85);
+    border: 1px solid #c9c9c9;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .2);
+    transition: all ease-in-out .3s;
+}
+
+.window.window--maximized {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.window.window--minimized {
+    height: 25px;
+    width: 180px;
+    .window-content {
+        display: none;
+    }
+}
+
+.window.window--destroyed {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.window-header {
+    background-color: #eee;
+    height: 25px;
+}
+
+.window-controls {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.window-controls .control-item {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #333;
+    transition: all ease-in .15s;
+    cursor: pointer;
+    &:hover {
+        background-color: #ccc;
+    }
+}
+
+.control-item.control-close {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    &:hover {
+        background-color: #ec6060;
+        color: #fff;
+    }
+}
+
+.control-item.control-maximize {
+    line-height: 19px;
+}
+
+.control-item.control-minimize {
+    line-height: 22px;
+}
+
+.window-cursor {
+    display: flex;
+    margin: 5px;
+    .i-cursor-indicator {
+        color: #fff;
+        font-size: 1em;
+        font-family: 'Consolas', monospace;
+        margin: 0 2px 0 5px;
+    }
+    .i-cursor-underscore {
+        width: 10px;
+        height: 3px;
+        background-color: #fff;
+        align-self: flex-end;
+        margin-right: 5px;
+        animation: blink 1s steps(2, start) infinite;
+    }
+}
+
+.window-input {
+    background-color: inherit;
+    border: none;
+    outline: 0;
+    color: transparent;
+    text-shadow: 0 0 0 #fff;
+    font-family: 'Consolas', monospace;
+    flex: 1;
+    &:focus {
+        outline: none;
+    }
+}
+
+.i-prompt {
+    width: 62px;
+    height: 62px;
+    background: url("https://cdn4.iconfinder.com/data/icons/small-n-flat/24/terminal-48.png") no-repeat center;
+    background-color: rgba(0, 0, 0, .35);
+    border-radius: 10px;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    transition: all ease-in-out .15s;
+    &:hover {
+        background-position: center 4px;
+    }
+}
+
+.i-prompt.hidden {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+// ####### End terminal #######3
