@@ -1,4 +1,6 @@
 <%= render "layouts/navbar" %>
+
+<% if current_user %>
 <h1>These are the available Books.</h1>
 <div class="row">
   <% @books.each do |book| %>
@@ -17,3 +19,7 @@
 <br>
 <h2>Add a book.</h2>
 <%= link_to "New Book", new_book_path %>
+
+<% else %>
+<p>Please sign in to gain access!!</p>
+<% end %>
