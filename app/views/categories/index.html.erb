@@ -1,4 +1,7 @@
 <%= render "layouts/navbar" %>
+
+<% if current_user %>
+
 <div class="container">
   <div class="well well-sm">
     <strong>Languages</strong>
@@ -150,165 +153,161 @@
     </div>
   </div>
 </div>
+</div>
+</div>
 
 <!-- ############################################### Table ############################################### -->
-<div class="table">
+<p>Get resources for your Learning</p>
+<table>
+<colgroup span="4"></colgroup>
+<tr>
+<th>
+  <%= link_to 'HTML',category_path(@html) %>
+</th>
+<th>
+  <%= link_to 'CSS',category_path(@css) %>
+</th>
+<th>
+  <%= link_to 'PYTHON',category_path(@python) %>
+</th>
+<th>
+  <%= link_to 'RUBY',category_path(@ruby) %>
+</th>
+<th>
+  <%= link_to 'JAVASCRIPT',category_path(@javascript) %>
+</th>
+<th>
+  <%= link_to 'C++',category_path(@cplus) %>
+</th>
+</tr>
+<tr>
+<td>
+  <% @html.subcategories.each do |subcategory| %>
+  <ul>
+    <li>
+      <%= link_to subcategory.name, category_subcategory_path(@html,subcategory) %>
+    </li>
+  </ul>
+  <%end%>
 
-  <p>Get resources for your Learning</p>
-  <table>
-    <colgroup span="4"></colgroup>
-    <tr>
-      <th>
-        <%= link_to 'HTML',category_path(@html) %>
-      </th>
-      <th>
-        <%= link_to 'CSS',category_path(@css) %>
-      </th>
-      <th>
-        <%= link_to 'PYTHON',category_path(@python) %>
-      </th>
-      <th>
-        <%= link_to 'RUBY',category_path(@ruby) %>
-      </th>
-      <th>
-        <%= link_to 'JAVASCRIPT',category_path(@javascript) %>
-      </th>
-      <th>
-        <%= link_to 'C++',category_path(@cplus) %>
-      </th>
-    </tr>
-    <tr>
-      <td>
-        <% @html.subcategories.each do |subcategory| %>
-        <ul>
-          <li>
-            <%= link_to subcategory.name, category_subcategory_path(@html,subcategory) %>
-          </li>
-        </ul>
-        <%end%>
+</td>
+<td>
+  <% @css.subcategories.each do |subcategory| %>
+  <ul>
+    <li>
+      <%= link_to subcategory.name, category_subcategory_path(@css,subcategory) %>
+    </li>
+  </ul>
+  <%end%>
+</td>
+<td>
+  <% @python.subcategories.each do |subcategory| %>
+  <ul>
+    <li>
+      <%= link_to subcategory.name ,category_subcategory_path(@python,subcategory)%>
+    </li>
+  </ul>
+  <%end%>
+</td>
+<td>
+  <% @ruby.subcategories.each do |subcategory| %>
+  <ul>
+    <li>
+      <%= link_to subcategory.name ,category_subcategory_path(@ruby,subcategory)%>
+    </li>
+  </ul>
+  <%end%>
+</td>
+<td>
+  <% @javascript.subcategories.each do |subcategory| %>
+  <ul>
+    <li>
+      <%= link_to subcategory.name, category_subcategory_path(@javascript,subcategory)%>
+    </li>
+  </ul>
+  <%end%>
+</td>
+<td>
+  <% @cplus.subcategories.each do |subcategory| %>
+  <ul>
+    <li>
+      <%= link_to subcategory.name ,category_subcategory_path(@cplus,subcategory)%>
+    </li>
+  </ul>
+  <%end%>
+</td>
+</tr>
 
-      </td>
-      <td>
-        <% @css.subcategories.each do |subcategory| %>
-        <ul>
-          <li>
-            <%= link_to subcategory.name, category_subcategory_path(@css,subcategory) %>
-          </li>
-        </ul>
-        <%end%>
-      </td>
-      <td>
-        <% @python.subcategories.each do |subcategory| %>
-        <ul>
-          <li>
-            <%= link_to subcategory.name ,category_subcategory_path(@python,subcategory)%>
-          </li>
-        </ul>
-        <%end%>
-      </td>
-      <td>
-        <% @ruby.subcategories.each do |subcategory| %>
-        <ul>
-          <li>
-            <%= link_to subcategory.name ,category_subcategory_path(@ruby,subcategory)%>
-          </li>
-        </ul>
-        <%end%>
-      </td>
-      <td>
-        <% @javascript.subcategories.each do |subcategory| %>
-        <ul>
-          <li>
-            <%= link_to subcategory.name, category_subcategory_path(@javascript,subcategory)%>
-          </li>
-        </ul>
-        <%end%>
-      </td>
-      <td>
-        <% @cplus.subcategories.each do |subcategory| %>
-        <ul>
-          <li>
-            <%= link_to subcategory.name ,category_subcategory_path(@cplus,subcategory)%>
-          </li>
-        </ul>
-        <%end%>
-      </td>
-    </tr>
-
-  </table>
-</div>
-<%= render "layouts/footer" %>
+</table>
 
 <!-- ############################################### js css and what not ######################## -->
 <style>
-.table{
-  margin-left: 250px;
+.glyphicon {
+margin-right: 5px;
 }
-  .glyphicon {
-    margin-right: 5px;
-  }
 
-  .thumbnail {
-    margin-bottom: 20px;
-    padding: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-  }
+.thumbnail {
+margin-bottom: 20px;
+padding: 0;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+}
 
-  .item.list-group-item {
-    float: none;
-    width: 100%;
-    background-color: #fff;
-    margin-bottom: 10px;
-  }
-  .item.list-group-item:hover,
-  .item.list-group-item:nth-of-type(odd):hover {
-    background: #428bca;
-  }
+.item.list-group-item {
+float: none;
+width: 100%;
+background-color: #fff;
+margin-bottom: 10px;
+}
+.item.list-group-item:hover,
+.item.list-group-item:nth-of-type(odd):hover {
+background: #428bca;
+}
 
-  .item.list-group-item .list-group-image {
-    margin-right: 10px;
-  }
+.item.list-group-item .list-group-image {
+margin-right: 10px;
+}
 
-  .item.list-group-item .thumbnail {
-    margin-bottom: 0;
-  }
+.item.list-group-item .thumbnail {
+margin-bottom: 0;
+}
 
-  .item.list-group-item .caption {
-    padding: 9px 9px 0;
-  }
-  .item.list-group-item:nth-of-type(odd) {
-    background: #eeeeee;
-  }
-  .item.list-group-item:after,
-  .item.list-group-item:before {
-    display: table;
-    content: " ";
-  }
+.item.list-group-item .caption {
+padding: 9px 9px 0;
+}
+.item.list-group-item:nth-of-type(odd) {
+background: #eeeeee;
+}
+.item.list-group-item:after,
+.item.list-group-item:before {
+display: table;
+content: " ";
+}
 
-  .item.list-group-item img {
-    float: left;
-  }
-  .item.list-group-item:after {
-    clear: both;
-  }
+.item.list-group-item img {
+float: left;
+}
+.item.list-group-item:after {
+clear: both;
+}
 
-  .list-group-item-text {
-    margin: 0 0 11px;
-  }
+.list-group-item-text {
+margin: 0 0 11px;
+}
+
 </style>
 <script>
-  // View en grid et liste pour categories
-  $(document).ready(function () {
-    $('#list').click(function (event) {
-      event.preventDefault();
-      $('#categories-list .item').addClass('list-group-item');
-    });
-    $('#grid').click(function (event) {
-      event.preventDefault();
-      $('#categories-list .item').removeClass('list-group-item');
-      $('#categories-list .item').addClass('grid-group-item');
-    });
+// View en grid et liste pour categories
+$(document).ready(function () {
+  $('#list').click(function (event) {
+    event.preventDefault();
+    $('#categories-list .item').addClass('list-group-item');
   });
+  $('#grid').click(function (event) {
+    event.preventDefault();
+    $('#categories-list .item').removeClass('list-group-item');
+    $('#categories-list .item').addClass('grid-group-item');
+  });
+});
 </script>
