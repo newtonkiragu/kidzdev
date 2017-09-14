@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require ace-rails-ap
-//= require socket.io
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
