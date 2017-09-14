@@ -1,10 +1,22 @@
+<%= render "layouts/navbar" %>
 <h2>
-  <%= image_tag @book.image_url.to_s %>
+  <%= image_tag @book.image_url.to_s, class:'image' %>
+  <br>
   <%= @book.title %>
 </h2>
-<p><%= markdown(@book.context) %></p>
-<p><%= link_to "Edit", edit_book_path(@book) %>|
-  <%= link_to "Delete", book_path(@book),
+<div class="container">
+
+  <p><%= markdown(@book.context) %></p>
+  <p><%= link_to "Edit", edit_book_path(@book) %>|
+    <%= link_to "Delete", book_path(@book),
                            :data => {:confirm => "You sure?",
                                      :method => "delete"} %>|
-</p>
+  </p>
+</div>
+<style media="screen">
+  .image {
+    width: 300px;
+    height: 250px;
+  }
+
+</style>
