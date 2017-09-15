@@ -9,11 +9,20 @@
             <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
                 <link rel="stylesheet" href="https://bootswatch.com/spacelab/bootstrap.min.css">
                 <link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <%= yield %>
+    <%= render "layouts/navbar"%>
+
+        <%= yield %>
+
+
+
+
+            <%= render "layouts/footer"%>
 </body>
+
 
 </html>
