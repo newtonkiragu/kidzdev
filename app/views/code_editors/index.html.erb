@@ -14,17 +14,17 @@
 </head>
 
 <body style="overflow:hidden">
-  <div class="column">
-    <div class="col-md-4">
-      <h1>hi there</h1>
-    </div>
-    <div class="col-md-8">
-      <h1>Practice</h1>
-    <div id="editor" class="col-md-8"></div>
-    <div id="result" class="col-md-4">
-        <div class="form-group">
-            <label></label>
-            <select id="languageSelector" onchange="changeLanguage()" name="lang" required="required" class="form-control languageSelector">
+    <div class="column">
+        <div class="col-md-4">
+            <h1>hi there</h1>
+        </div>
+        <div class="col-md-8">
+            <h1>Practice</h1>
+            <div id="editor" class="col-md-8"></div>
+            <div id="result" class="col-md-4">
+                <div class="form-group">
+                    <label></label>
+                    <select id="languageSelector" onchange="changeLanguage()" name="lang" required="required" class="form-control languageSelector">
             <option value="1">C </option>
             <option value="2">C++ </option>
             <option value="9">C# </option>
@@ -32,18 +32,18 @@
             <option value="20">Javascript </option>
             <option value="5" selected="selected">Python </option>
          </select>
+                </div>
+                <div id="compile">
+                    <div id="compileResponse"><textarea placeholder="Provide your input here each seperated by a new line." class="customInput"></textarea></div>
+                    <div id="compileButton"><button class="compileButton">COMPILE & RUN</button></div>
+                </div>
+                <div id="run">
+                    <div id="runResponse" style="height:300px;"> </div>
+                    <div id="submitButton"><button disabled="disabled" class="submitButton">YOUR OUTPUT</button></div>
+                </div>
+                <div id="submit"></div>
+            </div>
         </div>
-        <div id="compile">
-            <div id="compileResponse"><textarea placeholder="Provide your input here each seperated by a new line." class="customInput"></textarea></div>
-            <div id="compileButton"><button class="compileButton">COMPILE & RUN</button></div>
-        </div>
-        <div id="run">
-            <div id="runResponse" style="height:300px;"> </div>
-            <div id="submitButton"><button disabled="disabled" class="submitButton">YOUR OUTPUT</button></div>
-        </div>
-        <div id="submit"></div>
-      </div>
-    </div>
     </div>
     <script src="/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script>
@@ -60,17 +60,17 @@
         body {
             font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
         }
-
+        
         #message {
             border: 1px solid red;
         }
-
+        
         #result {
             height: 100%;
             background-color: #272822;
             border-left: 1px solid #676861;
         }
-
+        
         #compile {
             position: relative;
             height: 30%;
@@ -78,7 +78,7 @@
             background-color: white;
             border: 1px solid #676861;
         }
-
+        
         #run {
             position: relative;
             height: 61%;
@@ -86,7 +86,7 @@
             background-color: white;
             border: 1px solid #676861;
         }
-
+        
         #compileButton {
             position: absolute;
             bottom: 0;
@@ -94,7 +94,7 @@
             width: 100%;
             background-color: blue;
         }
-
+        
         #submitButton {
             position: absolute;
             bottom: 0;
@@ -102,7 +102,7 @@
             height: 3rem;
             background-color: blue;
         }
-
+        
         #runResponse {
             position: relative;
             height: 91%;
@@ -113,7 +113,7 @@
             min-width: 97%;
             max-width: 97%;
         }
-
+        
         #compileResponse {
             position: relative;
             height: 84%;
@@ -123,7 +123,7 @@
             border: 1px solid #676861;
             padding: 1rem;
         }
-
+        
         .compileButton {
             width: 100%;
             color: white;
@@ -131,11 +131,11 @@
             font-weight: bold;
             background-color: #EC625F;
         }
-
+        
         .customInput {
             padding: 1rem;
         }
-
+        
         .submitButton {
             width: 100%;
             color: white;
@@ -143,54 +143,54 @@
             font-weight: bold;
             background-color: #AB1212;
         }
-
+        
         .questionContainer {
             margin-top: 50px;
             border: 1px solid black;
         }
-
+        
         .questionContainer .title {
             border-bottom: 1px solid black;
         }
-
+        
         .questionContainer .content {
             padding-bottom: 20px;
             border-bottom: 1px solid black;
         }
-
+        
         .customInput {
             min-width: 100%;
             min-height: 100%;
             max-width: 100%;
             max-height: 100%;
         }
-
+        
         .text {
             font-size: 17px;
         }
-
+        
         a {
             text-decoration: none !important;
             color: #00B7FF;
         }
-
+        
         .branch {
             margin-left: 5px;
         }
-
+        
         .year {
             margin-left: 5px;
         }
-
+        
         .project-name {
             padding: 0px 5px;
         }
-
+        
         .outer {
             position: relative;
             margin: 0 auto;
         }
-
+        
         img {
             opacity: 0.8;
             z-index: -1;
@@ -198,7 +198,7 @@
             min-width: 150px;
             min-height: 150px;
         }
-
+        
         .innnerBox {
             opacity: 0;
             -webkit-transition: opacity 0.3s, bottom 0.3s;
@@ -209,49 +209,49 @@
             background-color: white;
             border: 1px solid grey;
         }
-
+        
         .outer:hover .innnerBox {
             opacity: 1;
             bottom: 7px;
         }
-
+        
         .outer:hover img {
             opacity: 1;
         }
-
+        
         .floating-box {
             display: inline-block;
             width: auto;
             height: auto;
             margin: 10px;
         }
-
+        
         img {
             max-width: 100%;
             height: auto;
         }
-
+        
         @media screen and (max-width: 489px) {
             img {
                 height: 300px;
                 width: 300px;
             }
         }
-
+        
         @media screen and (max-width: 744px) {
             .heading p {
                 padding-left: 50px;
                 padding-right: 50px;
             }
         }
-
+        
         @media screen and (max-width: 744px) {
             .heading p {
                 padding-left: 50px;
                 padding-right: 50px;
             }
         }
-
+        
         @media screen and (max-width: 300px) {
             .heading p {
                 padding-left: 5px;
