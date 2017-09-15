@@ -1,0 +1,39 @@
+<%= render "layouts/navbar" %>
+    <div class=" container jumbotron jum-b">
+        <div class="container">
+            <h1>ABOUT US</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1 style="text-align:center;">Empowering the Makers of Tomorrow</h1>
+            <div class="col-sm-6">
+                <p>In a world where technology touches every aspect of our lives, it is crucial that our children become active creators of technology, not just passive users. We believe that the ability to code allows children to make their ideas a reality. Kidsdevs's mission is to provide every child with solid foundations in Computer Science, programming, and critical thinking skills to prepare them to become better architects of their future world. </p>
+            </div>
+            <div class="col-sm-6">
+                <%= image_tag  "kidstablet.jpg" ,alt:"", style:'width:80%'%>
+            </div>
+        </div>
+    </div>
+    <style>
+
+    .jum-b {
+        background-color: #03a9f4;
+        background-image: url(/assets/kidscoding.jpg);
+    }
+
+    .jumbotron h1 {
+        color: #FFF;
+        text-shadow: 1px 1px #000, 2px 2px #000;
+    }
+
+    .jumbotron p,
+    small {
+        color: #FFF;
+    }
+
+    em {
+        color: #000000;
+        text-shadow: 1px 1px #FFF, 2px 2px #FFF;
+    }
+    </style>
