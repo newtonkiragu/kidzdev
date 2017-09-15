@@ -17,12 +17,15 @@
                     </header>
                     <main class="window-content">
                         <div class="window-cursor">
-                            <span class="i-cursor-indicator">></span><span class="i-cursor-underscore"></span>
+                            <span class="i-cursor-indicator"><p class="element"></p></span><span class="i-cursor-underscore"></span>
                             <input type="text" class="window-input js-prompt-input" />
                         </div>
                     </main>
                 </section>
-                <div class="prompt-shortcut i-prompt hidden js-open"></div>
+                <div class="prompt-shortcut i-prompt hidden js-open">
+
+
+                </div>
 
 
                 <svg id="retina" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
@@ -439,4 +442,26 @@ for(var i=0; i< topics.length; i++){
 function retinaout(event) {
 		TweenMax.to("#retina", 0.2, {left:"50%",top:"60%"});
 }
+</script>
+
+<script>
+
+
+ var typed6 = new Typed('.element', {
+      strings: ['Hi my name is Bob,Welcome to Kidsdev.',
+          `Are you ready for an adventure and explore the coding universe?.`,
+          `Here in kidsdev you will learn awsome things and have fun.`,
+          `Scroll below and get started.`,
+          'Feel free to ask me any questions.', 'I can help you with any question you might have.`',
+
+
+      ],
+      typeSpeed: 40,
+      backSpeed: 0,
+      fadeOut: true,
+      loop: true
+
+
+});
+
 </script>
