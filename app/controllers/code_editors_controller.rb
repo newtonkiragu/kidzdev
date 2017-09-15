@@ -1,2 +1,0 @@
-class CodeEditorsController < ApplicationController
-end

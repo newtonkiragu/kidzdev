@@ -1,2 +1,0 @@
-class CodeEditor < ApplicationRecord
-end

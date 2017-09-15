@@ -1,3 +1,0 @@
-class LessonsController < ApplicationController
-
-end
