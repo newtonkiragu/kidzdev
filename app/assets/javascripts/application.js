@@ -13,7 +13,7 @@
 //= require typed
 //= require jquery
 //= require jquery_ujs
-//= require ace-rails-ap    
+//= require ace-rails-ap
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
