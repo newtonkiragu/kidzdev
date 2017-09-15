@@ -250,13 +250,13 @@ h2 a {
 .item.list-group-item {
     float: none;
     width: 100%;
-    background-color: #fff;
+    background-color: #4E4E4E;
     margin-bottom: 10px;
 }
 
 .item.list-group-item:hover,
 .item.list-group-item:nth-of-type(odd):hover {
-    background: #428bca;
+    background: white;
 }
 
 .item.list-group-item .list-group-image {
@@ -293,5 +293,21 @@ h2 a {
     margin: 0 0 11px;
 }
 
+th a {
+    color: antiquewhite;
+}
+
 
 /* ########### end table styling ############## */
+
+
+/* #################### categories language ########## */
+
+#explore-more {
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

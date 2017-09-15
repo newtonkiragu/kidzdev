@@ -41,16 +41,16 @@
 
     <!-- ##### Jumbotron section ####### -->
 
-    <div class="jumbotron jumbotron-billboard">
+    <div class="jumbotron jumbotron-billboard" style="margin:5%;">
         <div class="img"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>
+                    <h2 style="text-shadow: 2px 2px black;color:white; ">
                         <strong>KIDZDEV</strong> EMPOWERS KIDS TO BECOME MAKERS
                     </h2>
 
-                    <p style="font-size:20px;">Create and account to save your progress and projects,Or just start coding-<br/>no account needed.All courses are available at no cost</p>
+                    <p style="font-size:20px;color:antiquewhite;text-shadow: 2px 2px black;">Create and account to save your progress and projects,Or just start coding-<br/>no account needed.All courses are available at no cost</p>
                     <a href="#" class="btn btn-success btn-lg">Sign Up</a>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                                         GET STARTED</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Learn</a>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                                         GET STARTED</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Learn</a>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
             <div class="item  col-xs-4 col-lg-4">
                 <div class="thumbnail">
                     <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
-                    <%= image_tag  'python1.jpeg', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;' %>
+                    <%= image_tag  'python1.jpeg', alt:'html5logo',class:'group list-group-image',style: 'width:400px;height:250px;'%>
                         <div class="caption">
                             <h4 class="group inner list-group-item-heading">
                                 <%= link_to  "A Fun way to learn PYTHON" %>
@@ -136,7 +136,7 @@
                                         GET STARTED</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Learn</a>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +159,7 @@
                                         GET STARTED</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Learn</a>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +182,7 @@
                                         GET STARTED</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Learn</a>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +205,7 @@
                                         GET STARTED</p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Learn</a>
                                 </div>
                             </div>
                         </div>
@@ -215,17 +215,18 @@
     </div>
 
     <!-- ############################################### Table ############################################### -->
-    <h1>
-        <span class="blue">&lt;</span>explore<span class="blue">&gt;</span>
-        <span class="yellow">More</pan>
+    <div class="container" id="explore-more">
+        <h1 style="color:white;">
+            <span class="blue">&lt;</span>explore<span class="blue">&gt;</span>
+            <span class="yellow">More</pan>
 </h1>
-<h2>Start exploring your favourite programming langugage<a href="http://pablogarciafernandez.com" target="_blank">It's fun</a>
-</h2>
+<p style="color:white;text-align:center;">Start exploring your favourite programming langugage<a href="http://pablogarciafernandez.com" target="_blank">It's fun</a>
+</p>
 
-<table class="table-container">
-  <colgroup span="4"></colgroup>
-  <tr>
-    <th>
+<table class="table-container" >
+  <!-- <colgroup span="4"></colgroup> -->
+  <tr >
+    <th style="color:antiquewhite;">
       <%= link_to 'HTML',category_path(@html) %>
     </th>
     <th>
@@ -247,7 +248,7 @@
   <tr>
     <td>
       <% @html.subcategories.each do |subcategory| %>
-      <ul>
+      <ul style="list-style: none">
         <li>
           <%= link_to subcategory.name, category_subcategory_path(@html,subcategory) %>
         </li>
@@ -257,7 +258,7 @@
     </td>
     <td>
       <% @css.subcategories.each do |subcategory| %>
-      <ul>
+      <ul style="list-style: none">
         <li>
           <%= link_to subcategory.name, category_subcategory_path(@css,subcategory) %>
         </li>
@@ -266,7 +267,7 @@
     </td>
     <td>
       <% @python.subcategories.each do |subcategory| %>
-      <ul>
+      <ul style="list-style: none">
         <li>
           <%= link_to subcategory.name ,category_subcategory_path(@python,subcategory)%>
         </li>
@@ -275,7 +276,7 @@
     </td>
     <td>
       <% @ruby.subcategories.each do |subcategory| %>
-      <ul>
+      <ul style="list-style: none">
         <li>
           <%= link_to subcategory.name ,category_subcategory_path(@ruby,subcategory)%>
         </li>
@@ -284,7 +285,7 @@
     </td>
     <td>
       <% @javascript.subcategories.each do |subcategory| %>
-      <ul>
+      <ul style="list-style: none">
         <li>
           <%= link_to subcategory.name, category_subcategory_path(@javascript,subcategory)%>
         </li>
@@ -293,7 +294,7 @@
     </td>
     <td>
       <% @cplus.subcategories.each do |subcategory| %>
-      <ul>
+      <ul style="list-style: none">
         <li>
           <%= link_to subcategory.name ,category_subcategory_path(@cplus,subcategory)%>
         </li>
@@ -304,10 +305,11 @@
 
 </table>
 
+</div>
+
 <!-- ################################### END GRID LAYOUT LANGUAGE ################################ -->
 
 
-<%= render "layouts/footer" %>
 
 <!-- ################################## STYLING AND SCRIPT ################## -->
 <!-- ############################################### js css and what not ######################## -->
@@ -332,7 +334,7 @@
   }
   .item.list-group-item:hover,
   .item.list-group-item:nth-of-type(odd):hover {
-    background: #428bca;
+    background: white !important;
   }
 
   .item.list-group-item .list-group-image {
