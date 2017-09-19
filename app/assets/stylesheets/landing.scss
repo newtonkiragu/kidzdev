@@ -16,13 +16,12 @@
 }
 
 #logocontainer {
-    padding-top: 30px;
     background: transparent;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    height: 50%;
+    height: 100%;
     position: absolute;
 }
 
@@ -40,7 +39,7 @@
     margin: 0;
     position: absolute;
     top: 27%;
-    left: 10%;
+    left: 25%;
     width: 5%;
     transform: translate(-50%, -50%);
 }
@@ -48,8 +47,8 @@
 #css3 {
     margin: 0;
     position: absolute;
-    top: 20%;
-    left: 35%;
+    top: 40%;
+    left: 15%;
     width: 5%;
     transform: translate(-50%, -50%);
     transform-origin: center center;
@@ -58,7 +57,7 @@
 #sass {
     margin: 0;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     width: 5%;
     transform: translate(-50%, -50%);

@@ -1,11 +1,11 @@
 <div class="container">
-
+<% if current_user %>
 <h1>These are the available Books.</h1>
 <div class="row">
   <% @books.each do |book| %>
   <div class="col-md-4 portfolio-item">
     <p>
-      <img src="<%= book.image %>" alt="No images available" width="290px" height="200px">
+      <img src="<%= book.image %>" alt="<%= book.title %>" width="20%" height="30%">
     </p>
     <h3>
       <%= link_to book.title, book_path(book) %>
@@ -18,4 +18,8 @@
 <br>
 <h2>Add a book.</h2>
 <%= link_to "New Book", new_book_path %>
+
+<% else %>
+<p>Please sign in to gain access!!</p>
+<% end %>
 </div>
