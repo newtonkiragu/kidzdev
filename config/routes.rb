@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   match '/contacts',to: 'pages#contacts',via: :get
   match '/about',to: 'pages#about',via: :get
   match '/lessons',to: 'lessons#index', via: :get
+  match '/quiz',to: 'pages#quiz', via: :get
  
 
 end
