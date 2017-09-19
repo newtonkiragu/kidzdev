@@ -290,12 +290,13 @@
                     };
 
 
-
+                    var data = "[{'api-key':'hackerrank|2759202-1877|824f42488b7d9c61df3bb3bb333cc808a7515fdb'},{'lang':config.language},{'testcases':'[' ']'},{'source':config.source},{'wait':true}]"
 
                     $.ajax({
                         type: 'POST',
-                        url: '/compile',
+                        url: 'http://api.hackerrank.com/checker/submission.json',
                         data: config,
+                        crossDomain: true,
                         dataType: 'json',
                     }).done(function(data) {
                         data = JSON.parse(data);
