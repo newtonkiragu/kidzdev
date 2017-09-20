@@ -1,5 +1,11 @@
 {
   "name": "kidzdev",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "start": "micro"
+  },
+  "dependencies": {
+    "micro": "latest"
+  }
 }

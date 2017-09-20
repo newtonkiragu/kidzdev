@@ -4,6 +4,15 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+# gem for node-rails to rty integrating a node app with ror
+gem "node-rails", git: "https://github.com/cloudspace/node-rails.git"
+# enable rack cors
+gem 'rack-cors'
+# use http party
+
+# Use Hackerack api for compiling
+gem 'hackerrank', '~> 0.1.0'
+
 
 gem "typedjs-rails", "~> 1.0.4"
 # Use ace for code editor

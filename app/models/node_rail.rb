@@ -1,0 +1,2 @@
+class NodeRail < ApplicationRecord
+end
