@@ -17,8 +17,6 @@ gem 'hackerrank', '~> 0.1.0'
 gem "typedjs-rails", "~> 1.0.4"
 # Use ace for code editor
 gem 'ace-rails-ap', '~> 4.1', '>= 4.1.1'
-# Use node-rails  to serve node code
-gem 'node-rails', git: 'https://github.com/cloudspace/node-rails.git'
 
 gem 'redis-rails'
 
