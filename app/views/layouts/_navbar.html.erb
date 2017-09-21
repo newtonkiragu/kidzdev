@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="/about">ABOUT
+                    <a href="/books">Books
                <span class="sr-only">Toggle navigation</span>
                </a>
                 </li>
@@ -22,10 +22,11 @@
                     <a href="/quiz">QUIZ TIME</a>
                 </li>
                 <li>
-                    <a href="/contacts">CONTACT US</a>
+                    <a href="/chat">CHAT WITH BOB</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+
                 <% if current_user.nil? %>
                     <li>
                         <%= link_to "Sign In", new_user_session_path %>
