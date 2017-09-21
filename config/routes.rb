@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :node_rails
   devise_for :users
   resources :code_editors
   resources :homes
