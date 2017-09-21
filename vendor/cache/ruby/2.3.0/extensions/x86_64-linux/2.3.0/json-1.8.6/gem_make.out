@@ -1,0 +1,13 @@
+current directory: /home/zeusx/workspace/backup/kidzdev/vendor/cache/ruby/2.3.0/gems/json-1.8.6/ext/json
+/usr/bin/ruby2.3 -r ./siteconf20170912-5684-cfiy11.rb extconf.rb
+creating Makefile
+
+current directory: /home/zeusx/workspace/backup/kidzdev/vendor/cache/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/zeusx/workspace/backup/kidzdev/vendor/cache/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/zeusx/workspace/backup/kidzdev/vendor/cache/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install
