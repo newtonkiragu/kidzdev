@@ -1,2 +1,0 @@
-class NodeRail < ApplicationRecord
-end
