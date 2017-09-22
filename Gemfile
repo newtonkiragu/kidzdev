@@ -15,7 +15,7 @@ gem 'hackerrank', '~> 0.1.0'
 
 gem 'typedjs-rails', '~> 1.0.4'
 # Use ace for code editor
-
+gem 'ace-rails-ap', '~> 4.1', '>= 4.1.1'
 
 gem 'redis-rails'
 
