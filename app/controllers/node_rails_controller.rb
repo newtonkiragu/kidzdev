@@ -1,5 +1,13 @@
 class NodeRailsController < ApplicationController
-  def get
-    node_rails_devise_redis_sync(@current_user)
-end
+  def python; end
+
+  def c; end
+
+  def javascript; end
+
+  def java; end
+
+  def csharp; end
+
+  def cplus; end
 end
