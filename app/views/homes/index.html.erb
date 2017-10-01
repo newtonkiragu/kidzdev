@@ -206,7 +206,11 @@
                 GET STARTED</p>
             </div>
             <div class="col-xs-12 col-md-6">
+<<<<<<< HEAD
               <a class="btn btn-success" href="/category/cplus">Learn C++</a>
+=======
+              <a class="btn btn-success" href="http://www.jquery2dotnet.com">Learn</a>
+>>>>>>> 85178d711168d60bec12d638c0c03bdf3c35e336
             </div>
           </div>
         </div>
@@ -221,7 +225,11 @@
     <span class="blue">&lt;</span>explore<span class="blue">&gt;</span>
     <span class="yellow">More</pan>
   </h1>
+<<<<<<< HEAD
   <p style="color:white;text-align:center;">Start exploring your favourite programming language<a href="http://pablogarciafernandez.com" target="_blank">It's fun</a>
+=======
+  <p style="color:white;text-align:center;">Start exploring your favourite programming langugage<a href="http://pablogarciafernandez.com" target="_blank">It's fun</a>
+>>>>>>> 85178d711168d60bec12d638c0c03bdf3c35e336
   </p>
 
   <table class="table-container">
@@ -251,7 +259,11 @@
         <% @html.subcategories.each do |subcategory| %>
         <ul style="list-style: none">
           <li>
+<<<<<<< HEAD
             <a href="https://codedashboard8.herokuapp.com/html"><%= subcategory.name %></a>
+=======
+            <%= link_to subcategory.name, category_subcategory_path(@html,subcategory) %>
+>>>>>>> 85178d711168d60bec12d638c0c03bdf3c35e336
           </li>
         </ul>
         <%end%>
@@ -270,7 +282,11 @@
         <% @python.subcategories.each do |subcategory| %>
         <ul style="list-style: none">
           <li>
+<<<<<<< HEAD
             <a href="https://codedashboard8.herokuapp.com/python"><%= subcategory.name %></a>
+=======
+            <%= link_to subcategory.name ,category_subcategory_path(@python,subcategory)%>
+>>>>>>> 85178d711168d60bec12d638c0c03bdf3c35e336
           </li>
         </ul>
         <%end%>
@@ -288,7 +304,11 @@
         <% @javascript.subcategories.each do |subcategory| %>
         <ul style="list-style: none">
           <li>
+<<<<<<< HEAD
             <a href="https://codedashboard8.herokuapp.com/javascript"><%= subcategory.name %></a>
+=======
+            <%= link_to subcategory.name, category_subcategory_path(@javascript,subcategory)%>
+>>>>>>> 85178d711168d60bec12d638c0c03bdf3c35e336
           </li>
         </ul>
         <%end%>
@@ -297,7 +317,11 @@
         <% @cplus.subcategories.each do |subcategory| %>
         <ul style="list-style: none">
           <li>
+<<<<<<< HEAD
             <a href="https://codedashboard8.herokuapp.com/cplus"><%= subcategory.name %></a>
+=======
+            <%= link_to subcategory.name ,category_subcategory_path(@cplus,subcategory)%>
+>>>>>>> 85178d711168d60bec12d638c0c03bdf3c35e336
           </li>
         </ul>
         <%end%>
