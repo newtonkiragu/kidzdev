@@ -25,12 +25,12 @@ Things you may want to cover:
 
 # Installation 
 
-`git clone https://github.com/newtonkiragu/kidzdev.git
+`git clone https://github.com/newtonkiragu/kidzdev.git`
 
-cd kidzdev
+`cd kidzdev`
 
-bundle install
-`
+`bundle install`
+
 
 # Technologies USed 
 
