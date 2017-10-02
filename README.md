@@ -1,4 +1,4 @@
-# SomaC0de
+# somac0de
 # Description 
 An application that helps users to learn coding.
 
