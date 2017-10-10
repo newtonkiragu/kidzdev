@@ -1,4 +1,4 @@
-# somac0de
+# KidsDev
 # Description 
 An application that helps users to learn coding.
 
